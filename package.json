@@ -1,0 +1,22 @@
+{
+  "name": "server_trial",
+  "version": "1.0.0",
+  "description": "server trial sockt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": ""
+  },
+  "keywords": [
+    "socket",
+    "server"
+  ],
+  "author": "Servet Gulnaroglu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.5.0",
+    "socket.io": "^2.3.0"
+  }
+}
