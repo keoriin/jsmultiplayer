@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> machinewar </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" >
+    <link rel='stylesheet' type='text/css' href='index.css'>
+  </head>
+  <body>
+    <div class="chatbox">
+      <ul spellcheck="false" id="chatList" class="chat-list"></ul>
+      <input spellcheck="false" id="chatInput" type="text" class="chat-input" placeholder="You can chat.."/>
+    </div>
+    <canvas id='canvas'>
+
+    </canvas>
+    <input type='button' id='keyButton' style='' value='keys' >
+    <div id='keys'>
+      <ul>
+        <li>
+          Up Arrow: move forward
+        </li>
+        <li>
+          Down Arrow: move back
+        </li>
+        <li>
+          Left Arrow: turn Left
+        </li>
+        <li>
+          Right Arrow: turn Right
+        </li>
+        <li>
+          Spacebar: fire
+        </li>
+        <li>
+          1: upgrade range
+        </li>
+        <li>
+          2: upgrade ammo
+        </li>
+      </ul>
+    </div>
+    <div id='imageDiv'>
+      <img id='image' src='images/machine.png'>
+    </div>
+    <div id='playerWrapper'>
+      <div id="players">Players: 0</div>
+      <div id='leaders'>
+        <ol id='leaderList'></ol>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='bullet.js' type='text/javascript'></script>
+    <script src='machine.js' type='text/javascript'></script>
+    <script src='index.js' type='text/javascript'></script>
+  </body>
+</html>

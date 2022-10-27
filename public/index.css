@@ -1,0 +1,162 @@
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'JetBrains Mono';
+}
+
+html, body, canvas{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#imageDiv{
+  display:none;
+}
+
+#health{
+ background-color:green;
+ position:absolute;
+ left: 125px;
+ top: 400px;
+ width: 160px;
+}
+
+.enemyHealthBar {
+  background-color: green;
+  position: absolute;
+  width: 30px;
+  height: 6px;
+}
+
+.chatbox {
+    position: absolute;
+    width: 300px;
+    height: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    bottom: 5px;
+    left: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.chatbox .chat-list {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    height: 285px;
+    overflow: hidden;
+}
+
+.chatbox .chat-list li {
+    padding: 2px;
+    margin: 3px;
+}
+
+.chatbox .chat-input {
+    pointer-events: all;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-top: 1px solid #DDD;
+    outline: none;
+    color: white;
+}
+
+#keys ul li {
+  color: white;
+}
+
+#keyButton {
+  position: absolute;
+  top: 170px; 
+  left: 10px;
+  border-radius:3px;
+  background: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#keys {
+  position: absolute;
+  width: 250px; 
+  visibility: hidden;
+  left:5px;
+  top:220px;
+}
+
+/*#chatList, #chatInput{
+  font-family: , Charcoal, sans-serif;
+}*/
+
+#players {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #FFF;
+  font-size: 18px;
+  top: 0;
+  right: 0;
+  text-align: right;
+  pointer-events: none;
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+  width: 187px;
+
+}
+
+#leaders{
+  position:absolute;
+  width: inherit;
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFF;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: right;
+  font-size: 15px;
+  top: 35px;
+  right: 0;
+  pointer-events: none;
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+  width: 187px;
+}
+
+#leaders , #players {
+  padding:5px;
+}
+
+#playerWrapper li {
+  white-space: nowrap;
+}
+
+body {
+  overflow: hidden;
+}
+
+#playersSpan{
+  border-bottom-style: solid;
+  border-bottom-color: coral;
+}
